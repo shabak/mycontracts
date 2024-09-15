@@ -1,0 +1,26 @@
+{
+  "name": "mycontracts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-verify": "^2.0.10",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "@openzeppelin/contracts": "^5.0.2",
+    "chai": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "ethereum-waffle": "^4.0.10",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.22.10"
+  },
+  "dependencies": {
+    "@uniswap/v2-periphery": "^1.1.0-beta.0"
+  }
+}
