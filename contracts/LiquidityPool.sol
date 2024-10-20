@@ -4,6 +4,7 @@ pragma solidity ^0.8.0;
 import "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import "hardhat/console.sol";
 
 contract LiquidityPool {
     using SafeERC20 for IERC20;
@@ -51,6 +52,8 @@ contract LiquidityPool {
         path[1] = tokenIn == address(token1) ? address(token2) : address(token1);
 
         uint256[] memory amounts = uniswapRouter.getAmountsOut(amountIn, path);
+        console.log("amounts[0]:", amounts[0]);
+        console.log("amounts[1]:", amounts[1]);
         return amounts[1];
     }
 
